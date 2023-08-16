@@ -44,7 +44,7 @@ const connectToNewUser = (userId, stream) => {
     call.on('stream', userVideoStream => {
         addVideoStream(video, userVideoStream);
     });
-}
+};
 
 const addVideoStream = (video, stream) => {
     video.srcObject = stream;
